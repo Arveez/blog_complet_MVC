@@ -1,0 +1,23 @@
+body {
+	background-color: black;
+	color: white;
+	max-width: 500px;
+	margin :auto;
+}
+h1, h2 {
+	text-align: center;
+}
+h2 {
+		background-color: orange;
+
+}
+section {
+	border: 5px solid orange;
+	padding: 30px;
+	border-radius:  12px;
+}
+a {
+	position: relative;
+	right: -70%;
+	color: white;
+}

@@ -7,4 +7,5 @@
 	$req->execute();
 	$commentaires = $req->fetchAll();
 	return $commentaires;
+	$req->closeCursor();
 }

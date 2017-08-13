@@ -4,12 +4,11 @@ body {
 	max-width: 500px;
 	margin :auto;
 }
-h1, h2 {
+h1, h2, h3 {
 	text-align: center;
 }
-h2 {
+h2, h3 {
 		background-color: orange;
-
 }
 section {
 	border: 5px solid orange;
@@ -20,4 +19,10 @@ a {
 	position: relative;
 	right: -70%;
 	color: white;
+}
+#inscription, #connexion {
+	border: 3px solid orange;
+	border-radius: 12px;
+	padding:7px;
+
 }

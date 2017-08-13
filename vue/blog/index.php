@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>BLOG</title>
+	<title>BLOGO</title>
 	<link rel="stylesheet" href="vue/blog/style.css" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width;initial-scale=1">
 
-	</style>
 </head>
 <body>
 	<section>
-		<h1>BLOG</h1>
+		<a href="vue/membres/connexion-inscription.php">CONNEXION</a><br />
+		<h1>BLOGO</h1>
 		<div id="billets">
 			<?php foreach ($billets as $key => $value) { ?>
 				<div class="billet">

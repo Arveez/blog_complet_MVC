@@ -9,10 +9,12 @@ A final attemt to create an *MVC* architectured blog with *several modules* such
 
 
 
-Here is some stuff specificly asked for by the Wild Code School:
----------------------------------------------------------------
+*Here is some stuff specificly asked for by the Wild Code School:*
 
 
 * Found an open source text editor with project folder side tree : [Atom](https://github.com/atom/atom) Just ran it for the first time : looks great !
 
-
+* Steps to `git commit`
+	1. `git init` : initialises local repo (project root),
+	2. `git add [files]` : stages the files to be commited,
+	3. `git commit - m "[message text]" : saves the files and message with date, author and a unique identifier.

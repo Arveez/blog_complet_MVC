@@ -17,7 +17,7 @@ if ($_POST['pass'] !== $_POST['pass2'])
 {
 	header('Location: ../../vue/membres/connexion-inscription.php?diff="diff"');
 }
-$pass_hash = hash('sha256', $_POST['pass']);
+$pass_hash = hash('sha256', 'Gr'.$_POST['pass']);
 
 
 // registering

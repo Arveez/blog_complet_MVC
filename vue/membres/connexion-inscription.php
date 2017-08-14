@@ -24,7 +24,7 @@
 				<label for="pseudo" maxlength="40" >Pseudo</label> : <input type="text" name="pseudo" required="required" placeholder="<?php if (isset($_GET['pris'])) {echo 'déjà pris';}; ?>" /><br />
 		        <label for="pass">Mot de passe</label> : <input type="password" name="pass" required="required" placeholder="<?php if (isset($_GET['diff'])) {echo 'les mots de passe...';}; ?>" /><br />
 		        <label for="pass2">Mot de passe</label> : <input type="password" name="pass2" required="required" placeholder="<?php if (isset($_GET['diff'])) {echo 'ne correspondent pas.';}; ?>" />
-		        <label for="mail">E-mail : <input type="text" name="mail" id="mail" required="required" /><br/>
+		        <label for="email">E-mail : <input type="text" name="email" id="email" required="required" /><br/>
 		       	<input type="submit" />
 			</form>
 		</div>

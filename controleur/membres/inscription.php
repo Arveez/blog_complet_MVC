@@ -23,4 +23,5 @@ $pass_hash = hash('sha256', $_POST['pass']);
 // registering
 
 include_once('../../modele/membres/inscription.php');
-
+$inscription = inscription($_POST['pseudo'],$pass_hash,$_POST['email']);
+echo $inscription;

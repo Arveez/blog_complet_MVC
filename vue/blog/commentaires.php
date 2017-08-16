@@ -18,10 +18,10 @@
 				<?php foreach ($commentaires as $key => $value) { ?>
 					<strong><?php echo $value['auteur']; ?></strong><br />
 					<p><?php echo $value['contenu_commentaire']; ?></p>
-				<?php	
+				<?php
 				}
 				?>
 			</div>
-	</section>	
+	</section>
 </body>
 </html>

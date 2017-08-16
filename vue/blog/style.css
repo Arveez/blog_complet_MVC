@@ -20,9 +20,11 @@ a {
 	right: -70%;
 	color: white;
 }
-#inscription, #connexion {
+.box {
 	border: 3px solid orange;
 	border-radius: 12px;
 	padding:7px;
-
+}
+#bill {
+	width: 100%;
 }

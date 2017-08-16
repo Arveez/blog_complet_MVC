@@ -1,4 +1,4 @@
-<?php
+<?php 
 	function get_commentaires($id_billet){
 	global $bdd;
 	$id_billet = (int) $id_billet;

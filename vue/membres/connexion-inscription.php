@@ -1,3 +1,4 @@
+<?php session_start();	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,15 +11,15 @@
 <body>
 	<section>
 		<a href="../../index.php">RETOUR</a>
-		<div id="connexion">
+		<div class="box "id="connexion">
 			<h3>connexion</h3>
 			<form method="post" action="../../controleur/membres/connexion.php">
-				<label for="pseudo" maxlength="40" >Pseudo</label> : <input type="text" name="pseudo" required="required"/><br />
+				<label for="pseudo" maxlength="40" >Pseudo</label> : <input type="text" name="pseudo" required="required" placeholder="<?php if (isset($_GET['wrong'])) {echo 'problème identifiant/mot de passe';}; ?>"/><br />
 		        <label for="pass">Mot de passe</label> : <input type="password" name="pass" required="required" />
 		       	<input type="submit" />
 			</form>
 		</div>
-		<div id="inscription">
+		<div class="box" id="inscription">
 			<h3>inscription</h3>
 			<form method="post" action="../../controleur/membres/inscription.php">
 				<label for="pseudo" maxlength="40" >Pseudo</label> : <input type="text" name="pseudo" required="required" placeholder="<?php if (isset($_GET['pris'])) {echo 'déjà pris';}; ?>" /><br />

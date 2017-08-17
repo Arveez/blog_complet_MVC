@@ -18,6 +18,7 @@
 			<?php } else { ?>
 				<a href="vue/membres/connexion-inscription.php">CONNEXION</a><br />
 			<?php } ?>
+		</p>
 		<h1>BLOGO</h1>
 		<div id="billets">
 			<?php foreach ($billets as $key => $value) { ?>
@@ -31,5 +32,27 @@
 			?>
 		</div>
 	</section>
+	<section id="chat">
+		<h1>CHATTO</h1>
+		<div id="last_posts">
+		</div>
+			<?php if (isset($_SESSION['pseudo'])) { ?>
+				<form method="post" action="controleur/chat/write_post.php">
+					<textarea id="message" name="post_to_write"></textarea>
+					<input type="submit" value="POSTER">
+				</form>
+			<?php } else { ?>
+				<a href="vue/membres/connexion-inscription.php">CONNEXION</a>
+			<?php } ?>
+	</section>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script>
+	$(document).ready(function() {
+		setInterval(function() {
+			$('#last_posts').load('controleur/chat/last_posts.php')
+		}, 1000
+		);
+	});
+	</script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 body {
 	background-color: black;
 	color: white;
-	max-width: 500px;
-	margin :auto;
+	display: flex;
+	align-items: baseline;
 }
 h1, h2, h3 {
 	text-align: center;
@@ -14,6 +14,8 @@ section {
 	border: 5px solid orange;
 	padding: 30px;
 	border-radius:  12px;
+	width: 500px;
+	margin: auto;
 }
 a {
 	position: relative;
@@ -27,4 +29,8 @@ a {
 }
 #bill {
 	width: 100%;
+}
+#comment_content, #message {
+	width: 100%;
+	background-color: lightgrey;
 }
